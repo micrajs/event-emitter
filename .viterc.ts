@@ -12,12 +12,12 @@ export default defineConfig({
       formats: ['cjs', 'es'],
       fileName: (format) => {
         if (format === 'cjs') {
-          return `index.js`;
+          return `[name].js`;
         }
         if (format === 'es') {
-          return `index.mjs`;
+          return `[name].mjs`;
         }
-        return `index.${format}.js`;
+        return `[name].${format}.js`;
       },
     },
     rollupOptions: {
