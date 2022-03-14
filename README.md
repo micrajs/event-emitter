@@ -8,12 +8,17 @@
   <a href="https://github.com/micrajs/.github/blob/latest/CODE_OF_CONDUCT.md">Code of Conduct</a>
 </p>
 
+<p align="center">
+  <img alt="version" src="https://img.shields.io/npm/v/@micra/event-emitter?color=%23F3626C&logo=npm" />
+  <img alt="issues" src="https://img.shields.io/github/issues-search/micrajs/community?color=%23F3626C&label=Issues&logo=github&query=label%3A%22Project%3A%20event-emitter%22" />
+  <img alt="prs" src="https://img.shields.io/github/issues-pr/micrajs/event-emitter?color=%23F3626C&label=Pull%20requests&logo=github" />
+</p>
 
-<h1 align="center">@micra/{{{ NAME }}}</h1>
+<h1 align="center">@micra/event-emitter</h1>
 
 ## About
 
-{{{ DESCRIPTION }}}
+Isomorphic implementation of Micra's Event Emitter contract.
 
 ## Contributors
 
