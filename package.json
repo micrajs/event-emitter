@@ -1,0 +1,40 @@
+{
+  "name": "@micra/event-emitter",
+  "version": "0.1.0-next.0",
+  "description": "Isomorphic implementation of Micra's Event Emitter contract",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micrajs/event-emitter.git"
+  },
+  "author": "Olavo Amorim Santos<olavo.santos@micra.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micrajs/community/issues?q=is:issue+is:open+label:%22Project:+event-emitter%22+label:%22Type:+fix%22"
+  },
+  "scripts": {
+    "build": "concurrently 'pnpm:build:*'",
+    "build:code": "vite build --config .viterc.ts",
+    "build:types": "tsc -p tsconfig.json && tsc-alias --silent -p tsconfig.json --dir .",
+    "dev": "concurrently 'pnpm:dev:*'",
+    "dev:code": "pnpm build:code -- --watch",
+    "dev:types": "nodemon --ext 'ts,tsx' --exec 'pnpm build:types'",
+    "lint": "eslint --ext .ts,.tsx .",
+    "test": "vitest run --config .viterc.ts",
+    "test:coverage": "vitest run --coverage --config .viterc.ts",
+    "test:dev": "vitest --config .viterc.ts"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@micra/core": "github:micrajs/core#next",
+    "@micra/developer-tools": "github:micrajs/developer-tools#next",
+    "@types/node": "^17.0.21",
+    "c8": "^7.11.0",
+    "concurrently": "^7.0.0",
+    "eslint": "^8.11.0",
+    "nodemon": "^2.0.15",
+    "tsc-alias": "^1.6.4",
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6",
+    "vitest": "^0.6.1"
+  }
+}
