@@ -1,5 +1,5 @@
 {
-  "extends": "@micra/developer-tools/tsconfig/base",
+  "extends": "@micra/typescript-config/base",
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
