@@ -4,7 +4,7 @@
 export class EventEmitter<E extends Record<string, any> = Record<string, any>>
   implements Micra.EventEmitter<E>
 {
-  _events: Partial<{ [K in keyof E]: ((payload: E[K]) => void)[] }> = {};
+  _events: Partial<{[K in keyof E]: ((payload: E[K]) => void)[]}> = {};
 
   private _callListener<K extends keyof E>(
     event: K,
