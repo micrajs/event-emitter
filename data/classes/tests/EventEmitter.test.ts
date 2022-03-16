@@ -1,4 +1,4 @@
-import { EventEmitter } from '../EventEmitter';
+import {EventEmitter} from '../EventEmitter';
 
 declare global {
   namespace Application {
@@ -15,7 +15,7 @@ describe('EventEmitter tests', () => {
 
     eventEmitter.on('event', listener);
 
-    expect(eventEmitter._events).toEqual({ event: [listener] });
+    expect(eventEmitter._events).toEqual({event: [listener]});
   });
 
   it('should add multiple listeners of a given event', async () => {
@@ -26,7 +26,7 @@ describe('EventEmitter tests', () => {
     eventEmitter.on('event', listener1);
     eventEmitter.on('event', listener2);
 
-    expect(eventEmitter._events).toEqual({ event: [listener1, listener2] });
+    expect(eventEmitter._events).toEqual({event: [listener1, listener2]});
   });
 
   it('should call a listener of a given event asynchronously', async () => {
