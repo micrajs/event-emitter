@@ -1,0 +1,14 @@
+{
+  "name": "@micra/event-emitter",
+  "version": "0.0.0",
+  "description": "Isomorphic implementation of Micra's Event Emitter contract",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micrajs/event-emitter.git"
+  },
+  "author": "Olavo Amorim Santos<olavo.santos@micra.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micrajs/community/issues?q=is:issue+is:open+label:%22Project:+event-emitter%22+label:%22Type:+fix%22"
+  }
+}
