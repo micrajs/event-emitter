@@ -1,6 +1,6 @@
 {
   "name": "@micra/event-emitter",
-  "version": "0.1.0-next.1",
+  "version": "0.1.0-next.2",
   "description": "Isomorphic implementation of Micra's Event Emitter contract",
   "repository": {
     "type": "git",
