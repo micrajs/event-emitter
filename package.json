@@ -11,6 +11,13 @@
   "bugs": {
     "url": "https://github.com/micrajs/community/issues?q=is:issue+is:open+label:%22Project:+event-emitter%22+label:%22Type:+fix%22"
   },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
   "scripts": {
     "prepare:husky": "husky install .config/husky",
     "build": "concurrently 'pnpm:build:*'",
