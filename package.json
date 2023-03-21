@@ -22,7 +22,7 @@
     "prepare:husky": "husky install .config/husky",
     "build": "concurrently 'pnpm:build:*'",
     "build:code": "vite build --config .viterc.ts",
-    "build:types": "tsc -p tsconfig.json && tsc-alias --silent -p tsconfig.json --dir .",
+    "build:types": "tsc -p tsconfig.json",
     "dev": "concurrently 'pnpm:dev:*'",
     "dev:code": "pnpm build:code -- --watch",
     "dev:types": "nodemon --ext 'ts,tsx' --exec 'pnpm build:types'",
@@ -33,24 +33,23 @@
     "version:prerelease": "npm version prerelease --preid=next --allow-same-version && git push --follow-tags"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.1",
+    "@commitlint/cli": "^17.4.4",
     "@micra/commit-lint-config": "next",
     "@micra/core": "next",
     "@micra/eslint-config": "next",
     "@micra/typescript-config": "next",
     "@micra/vite-config": "next",
-    "@types/node": "^17.0.21",
+    "@types/node": "^18.15.5",
     "c8": "^7.11.0",
     "concurrently": "^7.0.0",
     "eslint": "^8.11.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.6",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.0",
-    "tsc-alias": "^1.6.4",
-    "typescript": "^4.6.2",
-    "vite": "^2.8.6",
-    "vitest": "^0.6.1"
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.7"
   }
 }
